@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    
+    overflow-y: hidden;
+
+}
+
+.box{
+    border: 2px solid white;
+    height: 80%;
+    width: 64px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 21px;
+}
+.life-line{
+    height: 12vh;
+    width: 63vw;
+    background-color: black;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.question{
+    height: 40vh;
+    width: 63vw;
+    margin: 2vw;
+    background-color: black;
+    color: white;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question p{
+    max-width: 85%;
+}
+.options{
+    height: calc(100vh - 52vh);
+    min-width: 53%;
+    display: flex;
+    align-items: center;
+}
+.clues{
+    height: calc(100vh - 52vh);
+    width: 40%;
+    font-size: 23px;
+    overflow-wrap: break-word; 
+    padding:0vw 2vw 0vw 2vw; 
+    /* background-color: blue; */
+    border-left: 3px solid grey;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.ot{
+    height: calc(100vh - 52vh);
+    width: 63vw;
+    background-color: black;
+    display: flex;
+    margin-left: 2vw;
+    align-items: center;
+}
+
+.right{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 63vw;
+    width: 35vw;
+    background-color: #212121;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.level{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    width: 80%;
+    height: 2rem;
+    text-align: center;
+    margin-top: 7px;
+}
+
+
+.main{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    color: white;
+    font-size: 23px;
+    padding-bottom: 12px;
+}
+
+.point{
+    background-color: #59066B;
+    color: violet;
+    border: none;
+    padding: 2px;
+}
+
+.KBC{
+    color: violet;
+    font-size: 33px;
+    padding-bottom: 31px;
+    text-decoration: underline;
+}

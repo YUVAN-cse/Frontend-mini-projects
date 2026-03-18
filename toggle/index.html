@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .container{
+        margin-top: 233px;
+        border-top-right-radius: 43px;
+        border-top-left-radius: 43px;
+        border-bottom-right-radius: 43px;
+        border-bottom-left-radius: 43px;
+        height: 10vh;
+        width: 13vw;
+        padding: 8px;
+        background-color: red;
+        cursor: pointer;
+    
+    }
+
+    .circle{
+        border-radius: 50%;
+        background-color: white;
+        height: 10vh;
+        width: 10vh;
+        cursor: pointer;
+        /* transform: translateX(104px); */
+    }
+
+    .translate{
+        transform: translateX(104px);
+        background-color: white;
+        transition: all 0.3s ease-in-out 0.1s;
+    }
+
+    
+    .nontranslate{
+        transform: translateX(-2px);
+        background-color: white;
+        transition: all 0.3s ease-in-out 0.1s;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+    </div>
+</body>
+<script>
+   
+    let toggle = true
+    let go 
+    const val = document.querySelector(".circle");
+    const body = document.querySelector("body");
+
+    val.addEventListener('click', function () {
+        if (toggle) {
+            console.log("clicked");
+            val.className = 'translate circle'; 
+            go = setTimeout(() => {
+                  body.style.backgroundColor = "black"
+            }, 300);
+          
+            
+
+        } else {
+            console.log("unon");
+            val.className = 'circle nontranslate';
+            setTimeout(() => {
+                body.style.backgroundColor = "white"
+                
+            }, 300);
+        }
+        toggle = !toggle; 
+    });
+
+    
+    
+</script>
+</html>

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+.curser{
+    height: 25px;
+    width: 25px;
+    background-color: #95c11e;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+.curserblur{
+    height: 300px;
+    width: 300px;
+    background-color: #96c11e61;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    filter: blur(30px);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 28px 0 55px 103px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    text-transform: uppercase;
+    z-index: 11;
+    /* background-color: rgba(0, 0, 0, 0.5); Ensure nav is visible over video */
+    /* backdrop-filter: blur(10px); */
+}
+
+nav img {
+    height: 67px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav_buttons button {
+    background-color: black;
+    color: white;
+    height: 45px;
+    width: 166px;
+    border: 3px solid rgba(143, 241, 143, 0.454);
+    border-radius: 50px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav_buttons {
+    position: absolute;
+    bottom: 12px;
+    right: 103px;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.page1, .page2 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.27);
+    z-index: 10;
+}
+
+.page1 h1 {
+    font-size: 93px;
+    text-transform: uppercase;
+    font-weight: 900;
+    position: relative;
+    z-index: 2;
+}
+
+.page1 h1::before {
+    content: "Eat. Drink. Play.";
+    position: absolute;
+    color: black;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 1px #95c11e;
+    z-index: -1;
+}
+
+.page1 h2 {
+    font-weight: 900;
+    padding: 20px 0 15px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.page1 p {
+    max-width: 621px;
+    line-height: 25px;
+    font-size: 18px;
+    text-align: center;
+    z-index: 2;
+}
+

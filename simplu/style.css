@@ -1,0 +1,11 @@
+:root{
+    --color : blue
+}
+
+
+.text{
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: var(--color);
+
+}
