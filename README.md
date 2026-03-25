@@ -4,7 +4,7 @@ A collection of frontend mini projects built using **HTML**, **CSS**, **JavaScri
 
 ---
 
-## 📁 Projects
+## Projects
 
 | Project | Description | Tech Used |
 |---|---|---|
